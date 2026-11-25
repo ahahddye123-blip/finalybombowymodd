@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "bombowyclient",
+  "version": "${version}",
+  "name": "BombowyClient",
+  "description": "Klient PVP/HUD dla Fabric 1.21.4 z zachowaniem kolorów rang, licznikami czasu i efektami zabójstw.",
+  "authors": ["Bombowy"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.bombowy.client.BombowyClient"
+    ]
+  },
+  "mixins": [
+    "bombowyclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
